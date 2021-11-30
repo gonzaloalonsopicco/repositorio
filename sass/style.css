@@ -1,0 +1,225 @@
+h1 {
+  font-style: italic;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  margin: 0.2em;
+  padding: 0.2em;
+  color: #8f1b1b;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav nav div {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  padding: 4px;
+  margin: 4px;
+  border: #8f1b1b 1px solid;
+}
+
+.nav nav div .hijo {
+  font-size: 1em;
+  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
+  color: #8f1b1b;
+}
+
+.fotos {
+  display: inline-block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 50px 10px 50px;
+}
+
+.fotos .empanada {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  border: 10px solid #8f1b1b;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+.fotos .empanada .hola {
+  -webkit-transition: height 2s, widht 1s;
+  transition: height 2s, widht 1s;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+}
+
+.fotos .empanada .hola .hola:active {
+  width: 300px;
+  height: 300px;
+}
+
+.fotos .empanada .hola .hola:active .jamon {
+  color: #a6a238;
+}
+
+.fotos .empanada .hola .hola:active .jamon .carne {
+  color: #7a5e25;
+}
+
+.coccion {
+  -webkit-transition: height 1s, width 1s;
+  transition: height 1s, width 1s;
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  margin: 15px;
+  font-family: 'Open Sans', sans-serif;
+  color: #8f1b1b;
+}
+
+.coccion .coccion:hover {
+  width: 60px;
+  height: 60px;
+  background-color: black;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#sectionGusto {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / span 4;
+  padding: 20px;
+}
+
+#sectionGusto .coccion {
+  -webkit-transition: height 1s, width 1s;
+  transition: height 1s, width 1s;
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  margin: 15px;
+  font-family: 'Open Sans', sans-serif;
+  color: #8f1b1b;
+}
+
+#sectionGusto .coccion ol {
+  margin: 10px;
+  padding: 10px;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  color: black;
+  background-color: brown;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  background: linear-gradient to botton, white, red;
+}
+
+.content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.header, .nav, .section, .footer {
+  padding: 20px;
+}
+
+.content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.header {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / span 1;
+}
+
+.nav {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2 / span 4;
+}
+
+.section {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / span 4;
+  background-color: #8f1b1b;
+}
+
+.footer {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6 / 7;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */

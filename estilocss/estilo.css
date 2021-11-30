@@ -1,0 +1,188 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  }
+  .body{
+    background: linear-gradient (to botton, white, red);
+  }
+  .content{
+    flex-direction: column;
+    height: 100vh;
+  }
+ .header,.nav,.section,.footer {
+ padding: 20px;
+  } 
+
+  .content{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
+  }
+  .header{
+    grid-column: 1 / span 1;
+    background-color: white;
+  }
+  .nav{
+    grid-column: 2 / span 4;
+    background-color: white;
+  }
+  .section{
+    grid-column: 1 / span 4;
+    background-color: rgb(143, 27, 27);
+  }
+  .footer{
+    grid-column: 1 / span 2;
+    grid-row: 6 / 7;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #sectionGusto{
+    grid-column: 1 / span 4;
+    padding: 20px;
+  }
+  h1 {
+    font-style:italic;
+    animation-duration: 2s;
+    animation-name:aparecer;
+    margin:0.2em;
+    padding:0.2em;
+    color:rgb(143, 27, 27);
+  }
+  @keyframes aparecer {
+    0%{
+     opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  .nav{
+    display: flex;
+    padding-left: 0; 
+    margin-bottom: 0; 
+    list-style:none; 
+    justify-content: space-around;
+    align-items: center;
+  }
+  nav div{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 4px;
+    margin: 4px;
+    border:rgb(143, 27, 27) 1px solid;
+  } 
+  .hijo{
+    font-size:1em;
+    font-weight:normal;
+    font-family: 'Open Sans', sans-serif;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+    color: rgb(143, 27, 27);
+  }
+
+/*gustos */
+
+  #GustosDeEmpanada{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(143, 27, 27);
+  }
+  .fotos{
+    display:grid;
+    grid-template-columns: repeat(3, 5fr);
+    padding: 10px;
+    margin: 20px;
+  }
+  .TituloGusto{
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .hola{
+    padding: 5px;
+    margin: 5px;
+  }
+  .empanada{
+    display: inline-block;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid rgb(143, 27, 27);
+  }
+  .jamon{
+    color: rgb(166, 162, 56)
+  }
+  .carne{
+    color:  rgb(122, 94, 37);
+  }
+
+  /*informacion */
+  #info{
+    display:grid;
+    grid-template-columns: repeat(2, 2fr);
+    padding: 10px;
+    margin: 20px;
+  }
+  #TituloCoccion{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+  }
+  #preparacion{
+    display: flexbox;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border: black solid ;
+  }
+  #fotoderecha{
+    display:inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: black solid;
+  }
+  ol{
+    margin: 9px;
+    padding: 9px;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    color:black;
+  }
+  li{
+    margin: 1px;
+    padding: 1px;
+  }
+  .chef{
+    margin: 10px;
+    padding: 10px;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    color: black;
+    background-color: white;
+  }
+  .coccion{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(143, 27, 27);
+  }
+  p{
+    font-family: 'Open Sans', sans-serif;
+  }
+  /*delivery*/
+  
+
+
+  
+  
