@@ -135,6 +135,7 @@
     justify-content: center;
     padding: 10px;
     margin: 10px;
+    font-family: 'Open Sans', sans-serif;
   }
   #preparacion{
     display: flexbox;
@@ -181,6 +182,39 @@
     font-family: 'Open Sans', sans-serif;
   }
   /*delivery*/
+  #TituloDelivery{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  #info{
+    display:grid;
+    grid-template-columns: repeat(2, 2fr);
+    padding: 10px;
+    margin: 20px;
+  }
+  /*contacto*/
+  #deliveryy{
+    display:grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(3, 2fr);
+    padding: 10px;
+    margin: 20px;
+  }
+  .PediYa{
+    display: flex;
+    justify-content:center;
+    margin: 10px;
+    padding: 10px;
+  }
+  .PediYaImg{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+  }
   
 
 
