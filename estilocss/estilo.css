@@ -16,9 +16,11 @@
     font-size:1.5em;
     font-weight:normal;
     list-style:none;
+    justify-content: center;
     text-decoration: none;
     border-radius: 3px;
     padding: 0.5rem 1rem;
+    margin: 5px;
     color: black;
     font-family: 'Open Sans', sans-serif;
   }
@@ -29,9 +31,22 @@
     list-style:none;
     text-decoration: none;
   }
+  .NavEnlaces.active{
+    color: white;
+    background-color: rgb(143, 27, 27);
+  }
+  .NavFixed{
+    position: fixed !important;;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background: white;
+  }
   #SectionInicio{
     grid-area: section;
     padding-top:1px;
+    margin-top: 86px;
   }
   .FotoInicio{
     width: 100%;
@@ -130,6 +145,7 @@
     grid-area: section;
     padding-top:1px;
     padding-bottom: 10px;
+    margin-top: 86px;
     background-color: rgb(143, 27, 27);
 }
   .Titulos{
