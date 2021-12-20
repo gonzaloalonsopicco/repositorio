@@ -4,54 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>delivery, desde la cocina gourmet a tu casa</title>
     <meta name="keywords" content="empanadas, empanadas freezada, delivery, estilo gourmet">
     <link rel="stylesheet" href="estilocss/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="imagenes/logo.png">
-    <title>localidad</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>delivery, desde la cocina gourmet a tu casa</title>
 </head>
 <body>
-    <div class="content">
-        <header class="header">
-            <h1>estilo gourmet</h1>
-        </header>
-        <nav class="nav">
-            <div class="hijo"><a href="index.html">inicio</a></div>
-            <div class="hijo"><a href="gustos.html">gustos</a></div>
-            <div class="hijo"><a href="informacion.html">informacion</a></div>
-            <div class="hijo"><a href="delivery.html">delivery</a></div>
-            <div class="hijo"><a href="contacto.html">contacto</a></div>
-        </nav>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <div class="logo">
+        <img src="imagenes/logo.png" width="70px">
+        </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse nav" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="active NavEnlaces" aria-current="page" href="index.html">inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="NavEnlaces" href="gustos.html">gustos</a>
+          </li>
+          <li class="nav-item">
+            <a class="NavEnlaces" href="informacion.html">información</a>
+          </li>
+          <li class="nav-item">
+            <a class="NavEnlaces" href="delivery.html">delivery</a>
+          </li>
+          <li class="nav-item">
+            <a class="NavEnlaces" href="contacto.html">contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
         <section class="section">
-            <h3 id="TituloDelivery">
-                delivery
-            </h3>
-            <div id="info">
-                <div id="preparacion">
-                    <div>pedidos con 48 horas de anticipacion</div>
-                    <div>villa ballester gratis pidiendo 2 docenas</div>
-                    <div>CABA consultar</div>
+            <h2 class="TituloDelivery">
+                precios y promos
+            </h2>
+            <div class="GridDelivery">
+                <div class="GridPreciosPromos">
+                  <div class="CuadradoPromoFiestas">
+                  <h3 class="PromoFiestas">Promo Fiestas!!!</h3>
+                  </div>
+                  <div class="CuadradoPromoIzquierda">
+                    <div class="EmpanadasClasicasEspeciales">empanadas clásicas</div> 
+                    <div class="TextoPromoFiestas">$900 la doc. - $90 la unid.</div>
+                  </div>
+                  <div class="CuadradoPromoDerecha">
+                    <div class="EmpanadasClasicasEspeciales">empanadas especiales</div>
+                    <div class="TextoPromoFiestas">$1200 la doc. - $110 la unid.</div>
+                  </div>
                 </div>
-                <div id="fotoderecha">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52577.33153400166!2d-58.5734489014186!3d-34.55144823718226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9f880d30623%3A0xf63bd5e2b5393d70!2sVilla%20Ballester%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1638425346820!5m2!1ses!2sar" width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="GridFotoPromoFiestas">
+                    <img class="FotoPromoFiestas" src="imagenes/empanada_navidad.jpg">
                 </div>
             </div>
-            <h3 id="TituloDelivery">
-                pagos
-            </h3>
-            <p>efectivo y transferencia bancaria</p>
+            <h2 class="TituloDelivery">
+                delivery y pago
+            </h2>
+            <div class="GridDelivery">
+                <div class="GridTextoDelivery">
+                    <div class="TextoDelivery">pedidos de lunes a viernes de 9 a 21 horas con 48 horas de anticipación</div>
+                    <div class="TextoDelivery">zona Villa Ballester - envío gratis pidiendo mínimo 2 docenas</div>
+                    <div class="TextoDelivery">zona CABA consultar</div>
+                    <div class="TextoDelivery">pago en efectivo y por transferencia bancaria</div>
+                </div>
+                <div class="GridFotoMaps">
+                    <iframe class="FotoMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52577.33153400166!2d-58.5734489014186!3d-34.55144823718226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9f880d30623%3A0xf63bd5e2b5393d70!2sVilla%20Ballester%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1638425346820!5m2!1ses!2sar" width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
         </section>
         <footer class="footer">
-            <img src="imagenes/logo.png" width="75px">
-            <p>©Copyright 2018 Estilo gourmet - Todos los derechos reservados</p>
-            <img src="imagenes/instagram.png" width="50px">
-            <img src="imagenes/facebook.png" width="50px">
-        </footer>
-    </div>
+          <div class="FooterLogo">
+          <img src="imagenes/logo.png" width="75px">
+          </div>
+          <div class="FooterCopy">
+              <div class="quepasa">©Copyright 2021 Estilo gourmet - Todos los derechos reservados</div>
+          </div>
+          <div class="FooterInstagram">
+              <div class="FooterLogoInstagram">
+                  <div class="fab fa-instagram"></div>
+              </div>
+          </div>
+          <div class="FooterFacebook">
+              <div class="FooterLogoFacebook">
+                  <div class="fab fa-facebook-f"></div>
+              </div>
+          </div>
+          <div class="FooterWhatsapp">
+              <div class="FooterLogoWhatsapp">
+                  <div class="fab fa-whatsapp"></div>
+              </div>
+          </div>
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>   
 </body>

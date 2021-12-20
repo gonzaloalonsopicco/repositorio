@@ -1,101 +1,152 @@
-
-*{
-  margin: 0;
-  padding: 0;
+ *{
+    margin: 0;
+    padding: 0;
   }
-  .body{
-    background: linear-gradient (to botton, white, red);
-  }
-  .content{
-    flex-direction: column;
-    height: 100vh;
-  }
- .header,.nav,.section,.footer {
- padding: 20px;
-  } 
-
-  .content{
-    display: grid;
-    grid-template-rows: repeat(3,1fr);
-    grid-template-columns: repeat(2,1fr);
-  }
-  .header{
-    grid-column: 1 / span 1;
-    background-color: white;
+  .logo{
+    margin-left: 10%;
   }
   .nav{
-    grid-column: 2 / span 4;
+    display: flex;
+    justify-content: end;
+    margin-right: 5%;
     background-color: white;
   }
-  .section{
-    grid-column: 1 / span 4;
+  .NavEnlaces{
+    display: flex;
+    font-size:1.5em;
+    font-weight:normal;
+    list-style:none;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .NavEnlaces:hover{
     background-color: rgb(143, 27, 27);
+    color:white;
+    transition: .5s;
+    list-style:none;
+    text-decoration: none;
+  }
+  #SectionInicio{
+    grid-area: section;
+    padding-top:1px;
+  }
+  .FotoInicio{
+    width: 100%;
+    height: 50%;
   }
   .footer{
-    grid-column: 1 / span 2;
-    grid-row: 6 / 7;
-    display: inline-flex;
-    justify-content: space-around;
+    display:grid;
+    grid-template-columns: repeat(6, 5fr);
+    grid-template-rows:repeat(2, 1fr) ;
+    justify-items: center;
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 10px;
+  }
+  .FooterLogo{
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+  .FooterCopy{
+    display: grid;
+    grid-column: 3 / 5;
+    grid-row: 1 / 3;
     align-items: center;
   }
-  #sectionGusto{
-    grid-column: 1 / span 4;
-    padding: 20px;
+  .copy{
+    font-size: 1em;
   }
-  h1 {
-    font-style:italic;
-    animation-duration: 2s;
-    animation-name:aparecer;
-    margin:0.2em;
-    padding:0.2em;
-    color:rgb(143, 27, 27);
-  }
-  @keyframes aparecer {
-    0%{
-     opacity: 0;
-    }
-    100%{
-      opacity: 1;
-    }
-  }
-  .nav{
-    display: flex;
-    padding-left: 0; 
-    margin-bottom: 0; 
-    list-style:none; 
-    justify-content: space-around;
+  .FooterInstagram{
+    display: grid;
+    grid-column: 5 / 6;
+    grid-row: 1 / 3;
     align-items: center;
   }
-  nav div{
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 4px;
-    margin: 4px;
-    border:rgb(143, 27, 27) 1px solid;
-  } 
-  .hijo{
-    font-size:1em;
-    font-weight:normal;
-    font-family: 'Open Sans', sans-serif;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-    color: rgb(143, 27, 27);
+  .FooterLogoInstagram{
+    width: 32px;
+    height: 32px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  .FooterLogoInstagram:hover{
+    background: #C13584;
+  }
+  .FooterFacebook{
+    display: grid;
+    grid-column: 5 / 7;
+    grid-row: 1 / 3;
+    align-items: center;
+  }
+  .FooterLogoFacebook{
+    width: 32px;
+    height: 32px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  .FooterLogoFacebook:hover{
+    background: #1877f2;
+  }
+  .FooterWhatsapp{
+    display: grid;
+    grid-column: 6 / 7;
+    grid-row: 1 / 3;
+    align-items: center;
+  }
+  .FooterLogoWhatsapp{
+    width: 32px;
+    height: 32px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  .FooterLogoWhatsapp:hover{
+    background: #25d366;
   }
 
 /*gustos */
 
-  #GustosDeEmpanada{
+  .section{
+    grid-area: section;
+    padding-top:1px;
+    padding-bottom: 10px;
+    background-color: rgb(143, 27, 27);
+}
+  .Titulos{
     display: flex;
     justify-content: center;
+    font-size:4em;;
     padding: 15px;
     margin: 15px;
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(143, 27, 27);
+    font-family: 'Playball', cursive;
+    color: white;
   }
-  .fotos{
+  .GridGustos{
     display:grid;
-    grid-template-columns: repeat(3, 5fr);
-    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-gap: 15px;
+    padding: 20px;
     margin: 20px;
   }
   .TituloGusto{
@@ -103,120 +154,732 @@
     padding: 5px;
     margin: 5px;
     justify-content: center;
+    color: white;
     font-family: 'Open Sans', sans-serif;
   }
-  .hola{
-    padding: 5px;
-    margin: 5px;
-  }
-  .empanada{
+  .CuadradoEmpanada{
     display: inline-block;
     justify-content: center;
     padding: 10px;
     margin: 10px;
-    border: 5px solid rgb(143, 27, 27);
+    border: 5px solid black;
+    width: 100%;
+    transition: all 300ms;
+    position: relative;
+    border-radius: 10px;
   }
-  .jamon{
-    color: rgb(166, 162, 56)
+  .CuadradoEmpanada:hover{
+    transform: scale(1.10);
+    z-index: 1;
   }
-  .carne{
-    color:  rgb(122, 94, 37);
+  .FotosEmpanada{
+    border-radius: 10px;
+    width:100%;
   }
 
   /*informacion */
-  #info{
+
+  .TituloInformacion{
+    display: flex;
+    justify-content: center;
+    font-size:4em;;
+    padding: 15px;
+    margin: 15px;
+    font-family: 'Playball', cursive;
+    color: white;
+  }
+  .GridInformacion{
     display:grid;
     grid-template-columns: repeat(2, 2fr);
     padding: 10px;
     margin: 20px;
   }
-  #TituloCoccion{
+  .GridTextoCoccion{
     display: flex;
     justify-content: center;
-    padding: 10px;
+    flex-direction:column;
     margin: 10px;
+    padding: 10px;
+  }
+  .TextoCoccion{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.6em;
+    color: white;
     font-family: 'Open Sans', sans-serif;
   }
-  #preparacion{
-    display: flexbox;
-    padding: 10px;
-    margin: 10px;
-    background-color: white;
-    border: black solid ;
-  }
-  #fotoderecha{
+  .GridFotoCoccion{
     display:inline-block;
     margin: 10px;
     padding: 10px;
+    border-radius: 10px;
     border: black solid;
   }
-  ol{
-    margin: 9px;
-    padding: 9px;
-    font-size: 1em;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: normal;
-    color:black;
+  .FotoCoccion{
+    border-radius: 10px;
+    width:100%;
+    height:100%;
   }
-  li{
-    margin: 1px;
-    padding: 1px;
-  }
-  .chef{
-    margin: 10px;
-    padding: 10px;
-    font-size: 1em;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: normal;
-    color: black;
-    background-color: white;
-  }
-  .coccion{
-    display: flex;
-    padding: 10px;
-    margin: 10px;
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(143, 27, 27);
-  }
-  p{
-    font-family: 'Open Sans', sans-serif;
-  }
+
   /*delivery*/
-  #TituloDelivery{
+
+  .TituloDelivery{
     display: flex;
     justify-content: center;
-    padding: 10px;
-    margin: 10px;
-    font-family: 'Open Sans', sans-serif;
+    font-size:4em;;
+    padding: 15px;
+    margin: 15px;
+    font-family: 'Playball', cursive;
+    color: white
   }
-  #info{
+  .GridDelivery{
     display:grid;
     grid-template-columns: repeat(2, 2fr);
     padding: 10px;
     margin: 20px;
+    margin-right: 22px;
   }
+  .GridPreciosPromos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 20px;
+  }
+  .CuadradoPromoFiestas{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+  }
+  .PromoFiestas{
+    padding: 5px;
+    margin: 10px;
+    font-size: 2.5em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .CuadradoPromoIzquierda{
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10px;
+  }
+  .CuadradoPromoDerecha{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10px;
+  }
+  .EmpanadasClasicasEspeciales{
+    padding: 5px;
+    margin: 10px;
+    font-size: 2em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .TextoPromoFiestas{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.6em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .GridFotoPromoFiestas{
+    display:inline-block;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: black solid;
+  }
+  .FotoPromoFiestas{
+    border-radius: 10px;
+    width:100%;
+    height:100%;
+  }
+  .GridTextoDelivery{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    margin: 10px;
+    padding: 10px;
+  }
+  .TextoDelivery{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.6em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .GridFotoMaps{
+    display:inline-block;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: black solid;
+  }
+  .FotoMaps{
+    border-radius: 10px;
+    width:100%;
+    height:100%;
+  }
+
   /*contacto*/
-  #deliveryy{
+
+  .TituloContacto{
+    display: flex;
+    justify-content: center;
+    font-size:4em;;
+    padding: 15px;
+    margin: 15px;
+    font-family: 'Playball', cursive;
+    color: white
+  }
+  .GridContacto{
     display:grid;
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: repeat(3, 2fr);
     padding: 10px;
     margin: 20px;
   }
-  .PediYa{
+  .CuadradoTextoRedes{
     display: flex;
     justify-content:center;
+    align-items: center;
     margin: 10px;
     padding: 10px;
   }
-  .PediYaImg{
+  .TextoWhatsappContacto{
+    font-size:2em;;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .TextoWhatsappContacto:hover{
+    color: #25d366;
+  }
+  .TextoFacebookContacto{
+    font-size:2em;;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .TextoFacebookContacto:hover{
+    color: #1877f2;
+  }
+  .TextoInstagramContacto{
+    font-size:2em;;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .TextoInstagramContacto:hover{
+    color: #C13584;
+  }
+  .CuadradoLogoWhatsapp{
     display: flex;
     justify-content: center;
-    margin: 10px;
+    text-decoration: none;
+    align-items: center;
     padding: 10px;
+    margin: 10px;
   }
-  
+  .CuadradoLogoFacebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+  }
+  .CuadradoLogoInstagram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+  }
+  .LogoWhatsappContacto{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  .LogoWhatsappContacto:hover{
+    background: #25d366;
+  }
+  .LogoFacebookContacto{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  .LogoFacebookContacto:hover{
+    background: #1877f2;
+  }
+  .LogoInstagramContacto{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  .LogoInstagramContacto:hover{
+    background: #C13584;
+  }
+  .LogoColor{
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    width: 50px;
+    height: 50px;
+  }
+  .LogoColor:hover{
+    color: white;
+    width: 50px;
+    height: 50px;
+  }
+  .d-print-flex {
+    display: flex !important;
+  }
+  .formulario{
+    display: flex;
+    justify-content: center;
+    font-size:4em;;
+    padding: 15px;
+    margin: 15px;
+    font-family: 'Playball', cursive;
+    color: white
+  }
+  .FormularioExterior{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+  }
+  .FormularioInterior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+  }
+  .FormularioSubTitulos{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    color: white
+  }
+  .FormularioRellenar{
+    padding: 5px;
+    margin: 5px;
+    font-size: 1rem;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+  .FormulariooEnviar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+/*responsive*/
 
-  
-  
+@media only screen and (max-width:1200px){
+
+  .GridGustos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
+  .GridInformacion{
+    display:grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .TextoCoccion{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .PromoFiestas{
+    padding: 5px;
+    margin: 10px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .EmpanadasClasicasEspeciales{
+    padding: 5px;
+    margin: 10px;
+    font-size: 2em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .TextoPromoFiestas{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.6em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+@media only screen and (max-width:992px){
+  .logo{
+    margin-left: 0px;
+  }
+  .nav{
+    display: flex;
+    justify-content:center;
+    margin-right: 0px;
+  }
+  .GridGustos{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
+  }
+  .GridInformacion{
+    display:grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .TextoCoccion{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.4em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .GridDelivery{
+    display:grid;
+    grid-template-columns: repeat(1, 2fr);
+    padding: 10px;
+    margin: 20px;
+  }
+  .PromoFiestas{
+    padding: 5px;
+    margin: 10px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .EmpanadasClasicasEspeciales{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.8em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .TextoPromoFiestas{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.6em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+@media only screen and (max-width:800px){
+
+  .nav{
+    display: flex;
+    justify-content:center;
+    margin-right: 0px;
+  }
+  .GridGustos{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
+  }
+  .GridInformacion{
+    display:grid;
+      grid-template-columns: repeat(1, 2fr);
+  }
+  .TextoCoccion{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.4em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .GridDelivery{
+    display:grid;
+    grid-template-columns: repeat(1, 2fr);
+    padding: 10px;
+    margin: 20px;
+  }
+  .GridPreciosPromos{
+    padding: 10px;
+    margin: 20px;
+  }
+  .PromoFiestas{
+    padding: 5px;
+    margin: 10px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .TextoPromoFiestas{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.4em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+@media only screen and (max-width:651px){
+
+  .nav{
+    display: flex;
+    justify-content:center;
+    margin-right: 0px;
+  }
+  .footer{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:repeat(3, 1fr) ;
+    grid-gap: 30px;
+    justify-items: center;
+    padding: 10px;
+    margin: 10px;
+  }
+  .FooterLogo{
+    display: grid;
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+  }
+  .FooterCopy{
+    display: grid;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    align-items: center;
+  }
+  .copy{
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  .FooterInstagram{
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 3 / 3;
+    align-items: center;
+  }
+  .FooterFacebook{
+    display: grid;
+    grid-column: 2/ 2;
+    grid-row: 3 / 3;
+    align-items: center;
+  }
+  .FooterWhatsapp{
+    display: grid;
+    grid-column: 3 / 4;
+    grid-row: 3 / 3;
+    align-items: center;
+  }
+  .GridGustos{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(1,1fr);
+  }
+  .GridInformacion{
+    display:grid;
+    grid-template-columns: repeat(1, 2fr);
+  }
+  .TextoCoccion{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .GridDelivery{
+    display:grid;
+    grid-template-columns: repeat(1, 2fr);
+    padding: 10px;
+    margin: 20px;
+  }
+  .GridPreciosPromos{
+    padding: 10px;
+    margin: 20px;
+  }
+  .CuadradoPromoIzquierda{
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10px;
+  }
+  .CuadradoPromoDerecha{
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10px;
+  }
+  .PromoFiestas{
+    padding: 5px;
+    margin: 10px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .EmpanadasClasicasEspeciales{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.4em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .TextoPromoFiestas{
+    padding: 5px;
+    margin: 10px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width:425px){
+
+  .nav{
+    display: flex;
+    justify-content:center;
+    margin-right: 0px;
+  }
+  .footer{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:repeat(3, 1fr) ;
+    grid-gap: 20px;
+    justify-items: center;
+    padding: 10px;
+    margin: 10px;
+  }
+  .Titulos{
+    display: flex;
+    justify-content: center;
+    font-size:4em;;
+    padding: 15px;
+    margin: 15px;
+    margin-left: 25px;
+    font-family: 'Playball', cursive;
+    color: white;
+  }
+  .GridGustos{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(1,1fr);
+  }
+  .GridInformacion{
+    display:grid;
+    grid-template-columns: repeat(1, 2fr);
+  }
+  .TextoCoccion{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .TituloDelivery{
+    display: flex;
+    justify-content: center;
+    font-size:4em;;
+    padding: 15px;
+    margin: 15px;
+    margin-left: 25px ;
+    font-family: 'Playball', cursive;
+    color: white
+  }
+  .GridDelivery{
+    display:grid;
+    grid-template-columns: repeat(1, 2fr);
+    padding: 10px;
+    margin: 5px;
+  }
+  .GridPreciosPromos{
+    padding: 10px;
+    margin: 20px;
+  }
+  .CuadradoPromoFiestas{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+  }
+  .CuadradoPromoIzquierda{
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    align-items: flex-start;
+    padding: 5px;
+    margin: 10px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .CuadradoPromoDerecha{
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    display: flex;
+    align-items: flex-start;
+    padding: 5px;
+    margin: 10px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .PromoFiestas{
+    padding: 5px;
+    margin: 10px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .EmpanadasClasicasEspeciales{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .TextoPromoFiestas{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+}
