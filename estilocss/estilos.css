@@ -138,6 +138,21 @@
   .FooterLogoWhatsapp:hover{
     background: #25d366;
   }
+  .FooterLogoColor{
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+  .FooterLogoColor:hover{
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
 
 /*gustos */
 
@@ -409,7 +424,6 @@
   .CuadradoLogoWhatsapp{
     display: flex;
     justify-content: center;
-    text-decoration: none;
     align-items: center;
     padding: 10px;
     margin: 10px;
@@ -471,11 +485,13 @@
     color: white;
     width: 50px;
     height: 50px;
+    border-radius: 50%;
   }
   .LogoColor:hover{
     color: white;
     width: 50px;
     height: 50px;
+    border-radius: 50%;
   }
   .d-print-flex {
     display: flex !important;
