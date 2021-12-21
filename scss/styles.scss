@@ -1,0 +1,33 @@
+
+@import "inicio";
+@import "gustos";
+@import "informacion";
+@import "delivery";
+@import "contacto";
+@import "responsive";
+
+$ColorRed:rgb(143, 27, 27);
+$ColorInst: #C13584;
+$ColorFace: #1877f2;
+$ColorWhats: #25d366;
+
+$OpenSans:'Open Sans', sans-serif;
+$PlayBall:'Playball', cursive;
+
+@mixin PaddingMargin {
+    padding: 10px;
+    margin: 10px;
+}
+@mixin FontFamilyOpen {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+@mixin FontFamilyPlay {
+    color: white;
+    font-family: 'Playball', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}

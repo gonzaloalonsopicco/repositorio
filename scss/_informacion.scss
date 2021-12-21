@@ -1,107 +1,50 @@
-    h1 {
-      font-style:italic;
-      animation-duration: 2s;
-      animation-name:aparecer;
-      margin:0.2em;
-      padding:0.2em;
-      color:$color-red;
-    }
-    @keyframes aparecer {
-      0%{
-       opacity: 0;
-      }
-      100%{
-        opacity: 1;
-      }
-    }
-    .nav{
-      display: flex;
-      padding-left: 0; 
-      margin-bottom: 0; 
-      list-style:none; 
-      justify-content: space-around;
-      align-items: center;
-      nav div{
-        list-style-type: none;
-        display: flex;
-        flex-wrap: wrap;
-        list-style: none;
-        padding: 4px;
-        margin: 4px;
-        border:$color-red 1px solid;
-        .hijo{
-            font-size:1em;
-            font-weight:normal;
-            font-family: 'Open Sans', sans-serif;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-            color: $color-red;
-          }
-      }
-    } 
-    .fotos{
-      display:inline-block;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 50px 10px 50px;
-      .empanada{
-        display: inline-block;
-        padding: 10px;
-        margin: 10px;
-        border: 10px solid $color-red;
-        font-family: 'Open Sans', sans-serif;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 1;
-        .hola{
-            transition: height 2s, widht 1s;
-            width: 200px;
-            height: 200px;
-            z-index: 1;
-            .hola:active{
-                width: 300px;
-                height: 300px;
-                .jamon{
-                    color: rgb(166, 162, 56);
-                    .carne{
-                        color:  rgb(122, 94, 37);
-                      }
-                  }
-              }
-          }
-      }
-    }
-    .coccion{
-      transition: height 1s, width 1s;
-      width: 100px;
-      height: 100px;
-      padding: 15px;
-      margin: 15px;
-      font-family: 'Open Sans', sans-serif;
-      color:$color-red;
-      .coccion:hover{
-        width: 60px;
-        height: 60px;
-        background-color: black;
-      }
-    }
-    p{
-      font-family: 'Open Sans', sans-serif;
-    }
-#sectionGusto{
-    grid-column: 1 / span 4;
-    padding: 20px;
-    .coccion{
-        padding: 15px;
-        margin: 15px;
-        font-family: 'Open Sans', sans-serif;
-        color:"$color-red";
-        ol{
-            margin: 10px;
-            padding: 10px;
-            font-size: 1em;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: normal;
-            color: black;
-            background-color: $color-red;
-          }
-      }
+
+$OpenSans:'Open Sans', sans-serif;
+$PlayBall: 'Playball', cursive;
+
+@mixin PaddingMargin {
+  padding: 10px;
+  margin: 10px;
+}
+@mixin FontFamilyOpen {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.TituloInformacion{
+    display: flex;
+    justify-content: center;
+    font-size:4em;;
+    padding: 15px;
+    margin: 15px;
+    @include FontFamilyOpen();
+  }
+  .GridInformacion{
+    display:grid;
+    grid-template-columns: repeat(2, 2fr);
+    padding: 10px;
+    margin: 20px;
+  }
+  .GridTextoCoccion{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    @include PaddingMargin();
+  }
+  .TextoCoccion{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.6em;
+    @include FontFamilyOpen();
+  }
+  .GridFotoCoccion{
+    display:inline-block;
+    @include PaddingMargin();
+    border-radius: 10px;
+    border: black solid;
+  }
+  .FotoCoccion{
+    border-radius: 10px;
+    width:100%;
+    height:100%;
   }

@@ -1,0 +1,185 @@
+
+$ColorRed:rgb(143, 27, 27);
+$ColorInst: #C13584;
+$ColorFace: #1877f2;
+$ColorWhats: #25d366;
+
+$OpenSans:'Open Sans', sans-serif;
+$PlayBall:'Playball', cursive;
+
+@mixin PaddingMargin {
+    padding: 10px;
+    margin: 10px;
+}
+@mixin FontFamilyOpen {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+@mixin FontFamilyPlay {
+    color: white;
+    font-family: 'Playball', cursive;
+}
+
+.TituloContacto{
+    display: flex;
+    justify-content: center;
+    font-size:4em;;
+    padding: 15px;
+    margin: 15px;
+    @include FontFamilyPlay();
+  }
+  .GridContacto{
+    display:grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(3, 2fr);
+    padding: 10px;
+    margin: 20px;
+  }
+  .CuadradoTextoRedes{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    @include PaddingMargin();
+  }
+  .TextoWhatsappContacto{
+    font-size:2em;;
+    @include FontFamilyOpen();
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .TextoWhatsappContacto:hover{
+    color: $ColorWhats;
+  }
+  .TextoFacebookContacto{
+    font-size:2em;;
+    @include FontFamilyOpen();
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .TextoFacebookContacto:hover{
+    color: $ColorFace;
+  }
+  .TextoInstagramContacto{
+    font-size:2em;
+    @include FontFamilyOpen();
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .TextoInstagramContacto:hover{
+    color: $ColorInst;
+  }
+  .CuadradoLogoWhatsapp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include PaddingMargin();
+  }
+  .CuadradoLogoFacebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include PaddingMargin();
+  }
+  .CuadradoLogoInstagram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include PaddingMargin();
+  }
+  .LogoWhatsappContacto{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  .LogoWhatsappContacto:hover{
+    background: $ColorWhats;
+  }
+  .LogoFacebookContacto{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  .LogoFacebookContacto:hover{
+    background: $ColorFace;
+  }
+  .LogoInstagramContacto{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  .LogoInstagramContacto:hover{
+    background: $ColorInst;
+  }
+  .LogoColor{
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .LogoColor:hover{
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .d-print-flex {
+    display: flex !important;
+  }
+  .formulario{
+    display: flex;
+    justify-content: center;
+    font-size:4em;;
+    padding: 15px;
+    margin: 15px;
+    @include FontFamilyPlay();
+  }
+  .FormularioExterior{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include PaddingMargin();
+  }
+  .FormularioInterior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include PaddingMargin();
+  }
+  .FormularioSubTitulos{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+    font-size: 1em;
+    @include FontFamilyOpen();
+  }
+  .FormularioRellenar{
+    padding: 5px;
+    margin: 5px;
+    font-size: 1rem;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+  .FormulariooEnviar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

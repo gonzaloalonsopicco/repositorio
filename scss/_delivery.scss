@@ -1,0 +1,122 @@
+
+$ColorRed:rgb(143, 27, 27);
+$ColorInst: #C13584;
+$ColorFace: #1877f2;
+$ColorWhats: #25d366;
+
+$OpenSans:'Open Sans', sans-serif;
+$PlayBall:'Playball', cursive;
+
+@mixin PaddingMargin {
+    padding: 10px;
+    margin: 10px;
+}
+@mixin FontFamilyOpen {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+@mixin FontFamilyPlay {
+    color: white;
+    font-family: 'Playball', cursive;
+}
+
+.TituloDelivery{
+    display: flex;
+    justify-content: center;
+    font-size:4em;;
+    padding: 15px;
+    margin: 15px;
+    @include FontFamilyPlay;
+  }
+  .GridDelivery{
+    display:grid;
+    grid-template-columns: repeat(2, 2fr);
+    padding: 10px;
+    margin: 20px;
+    margin-right: 22px;
+  }
+  .GridPreciosPromos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 20px;
+  }
+  .CuadradoPromoFiestas{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include PaddingMargin();
+  }
+  .PromoFiestas{
+    padding: 5px;
+    margin: 10px;
+    font-size: 2.5em;
+    @include FontFamilyOpen();
+  }
+  .CuadradoPromoIzquierda{
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    @include PaddingMargin();
+  }
+  .CuadradoPromoDerecha{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    @include PaddingMargin();
+  }
+  .EmpanadasClasicasEspeciales{
+    padding: 5px;
+    margin: 10px;
+    font-size: 2em;
+    @include FontFamilyOpen();
+  }
+  .TextoPromoFiestas{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.6em;
+    @include FontFamilyOpen();
+  }
+  .GridFotoPromoFiestas{
+    display:inline-block;
+    @include PaddingMargin();
+    border-radius: 10px;
+    border: black solid;
+  }
+  .FotoPromoFiestas{
+    border-radius: 10px;
+    width:100%;
+    height:100%;
+  }
+  .GridTextoDelivery{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    @include PaddingMargin();
+  }
+  .TextoDelivery{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.6em;
+    @include FontFamilyOpen();
+  }
+  .GridFotoMaps{
+    display:inline-block;
+    @include PaddingMargin();
+    border-radius: 10px;
+    border: black solid;
+  }
+  .FotoMaps{
+    border-radius: 10px;
+    width:100%;
+    height:100%;
+  }
