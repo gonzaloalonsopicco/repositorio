@@ -18,6 +18,8 @@
   display: -ms-flexbox;
   display: flex;
   font-size: 1.5em;
+  font-weight: normal;
+  list-style: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -818,6 +820,114 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .GridGustos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  .GridInformacion {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (2fr)[2];
+        grid-template-columns: repeat(2, 2fr);
+  }
+  .TextoCoccion {
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .PromoFiestas {
+    padding: 5px;
+    margin: 10px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .EmpanadasClasicasEspeciales {
+    padding: 5px;
+    margin: 10px;
+    font-size: 2em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .TextoPromoFiestas {
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.6em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .logo {
+    margin-left: 0px;
+  }
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0px;
+  }
+  .GridGustos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .GridInformacion {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (2fr)[2];
+        grid-template-columns: repeat(2, 2fr);
+  }
+  .TextoCoccion {
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.4em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .GridDelivery {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (2fr)[1];
+        grid-template-columns: repeat(1, 2fr);
+    padding: 10px;
+    margin: 20px;
+  }
+  .PromoFiestas {
+    padding: 5px;
+    margin: 10px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .EmpanadasClasicasEspeciales {
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.8em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .TextoPromoFiestas {
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.6em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
 }
 
 @media only screen and (max-width: 800px) {

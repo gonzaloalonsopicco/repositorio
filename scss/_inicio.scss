@@ -28,6 +28,8 @@ $PlayBall: 'Playball', cursive;
   .NavEnlaces{
     display: flex;
     font-size:1.5em;
+    font-weight:normal;
+    list-style:none;
     justify-content: center;
     text-decoration: none;
     border-radius: 3px;

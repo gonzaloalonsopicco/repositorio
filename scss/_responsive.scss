@@ -20,6 +20,91 @@ $PlayBall:'Playball', cursive;
     font-family: 'Playball', cursive;
 }
 
+@media only screen and (max-width:1200px){
+
+  .GridGustos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
+  .GridInformacion{
+    display:grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .TextoCoccion{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.5em;
+    @include FontFamilyOpen();
+  }
+  .PromoFiestas{
+    padding: 5px;
+    margin: 10px;
+    @include FontFamilyOpen();
+  }
+  .EmpanadasClasicasEspeciales{
+    padding: 5px;
+    margin: 10px;
+    font-size: 2em;
+    @include FontFamilyOpen();
+  }
+  .TextoPromoFiestas{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.6em;
+    @include FontFamilyOpen();
+  }
+}
+
+@media only screen and (max-width:992px){
+  .logo{
+    margin-left: 0px;
+  }
+  .nav{
+    display: flex;
+    justify-content:center;
+    margin-right: 0px;
+  }
+  .GridGustos{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
+  }
+  .GridInformacion{
+    display:grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .TextoCoccion{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.4em;
+    @include FontFamilyOpen();
+  }
+  .GridDelivery{
+    display:grid;
+    grid-template-columns: repeat(1, 2fr);
+    padding: 10px;
+    margin: 20px;
+  }
+  .PromoFiestas{
+    padding: 5px;
+    margin: 10px;
+    @include FontFamilyOpen();
+  }
+  .EmpanadasClasicasEspeciales{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.8em;
+    @include FontFamilyOpen();
+  }
+  .TextoPromoFiestas{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.6em;
+    @include FontFamilyOpen();
+  }
+}
+
 @media only screen and (max-width:800px){
 
     .nav{
